@@ -1,0 +1,71 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+    nav ul {margin-left: 2%;}
+    nav ul li {width: auto;}
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem;}
+
+
+/*----------- MAIN --------------*/
+
+
+main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .members {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .band {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .firstRow {
+            display: flex;
+            padding: 0;
+            margin: 0;
+        
+        .secondRow {
+            
+        }
+
+            #gustavo {
+                margin: 0 auto;
+    
+            }
+            #hermoine {
+                margin: 0 auto;
+    
+            }
+        }
+
+        .secondRow {
+            display: flex;
+
+        }
+    
+        
+    }
+}
+
+
+
+
+
+/*----------- FOOTER --------------*/
+    

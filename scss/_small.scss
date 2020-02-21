@@ -1,0 +1,173 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+#gustavo {
+    display: block;
+    margin: 2% 0;
+}
+
+#hermoine {
+    display: block;
+    margin: 2%;
+}
+
+#olaf {
+    display: block;
+    margin: 2%;
+}
+
+#laura {
+    display: block;
+    margin: 2%;
+}
+
+figure.firstImg {
+    width: 150px;
+    float: right;
+    shape-outside: circle(37% at 49% 38%);
+    clip-path: circle(37% at 49% 38%);
+    padding-top: 0;
+    margin: 0 .5rem;
+
+}
+
+.firstImg img {
+    width: 100%;
+}
+
+figure.secondImg {
+    width: 200px;
+    float: right;
+    shape-outside: polygon(0 0, 50% 100%, 100% 0);
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    padding-top: 0;
+    margin: 0 .5rem;
+}
+
+.secondImg img {
+    width: 100%;
+}
+
+figure.thirdImg {
+    width: 200px;
+    height: 170px;
+    float: right;
+    shape-outside: polygon(100% 100%, 100% 0, 0 0);
+    clip-path: polygon(100% 100%, 100% 0, 0 0);
+    padding-top: 0;
+    margin: 0 .5rem;
+}
+
+.thirdImg img {
+    width: 100%;
+    
+}
+
+figure.fourthImg {
+    width: 180px;
+    height: 170px;
+    float: right;
+    shape-outside: circle(90.7% at 90% 12%);
+
+    clip-path: circle(90.7% at 90% 12%);
+    padding-top: 0;
+    margin: 0 .5rem;
+}
+
+.fourthImg img {
+    width: 100%;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.theGallery figure {
+    width: 85%;
+    height: 0;
+    padding-bottom: 57%; /* You define this doing image height / width * 100% */
+    position: relative;
+    margin: 0;
+}
+.section.theGallery figure img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
